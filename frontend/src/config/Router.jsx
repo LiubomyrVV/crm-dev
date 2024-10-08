@@ -1,5 +1,5 @@
 import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom';
-// import ReduxTest from '../test-components/ReduxTest';
+import ReduxTest from '../test-components/ReduxTest';
 
 const router = createBrowserRouter([
   {
@@ -15,10 +15,10 @@ const router = createBrowserRouter([
     path: 'about',
     element: <div>About</div>,
   },
-  //   {
-  //     path: 'redux',
-  //     element: <ReduxTest />,
-  //   },
+  {
+    path: 'redux',
+    element: <ReduxTest />,
+  },
 ]);
 
 export const AppRouter = () => {
