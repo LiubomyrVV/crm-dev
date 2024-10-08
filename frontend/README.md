@@ -24,12 +24,12 @@ Project Structure
 │
 ├── src/
 │   ├── api/              # Axios API setup
-│   │   └── crmApi.ts     # Axios configuration
+│   │   └── crmApi.js     # Axios configuration
 │   │
 │   ├── components/       # Reusable components
-│   │   ├── Navbar.tsx     # Navigation bar component
-│   │   ├── Sidebar.tsx    # Sidebar component
-│   │   ├── Dashboard.tsx   # Dashboard component
+│   │   ├── Navbar.js      # Navigation bar component
+│   │   ├── Sidebar.js     # Sidebar component
+│   │   ├── Dashboard.js    # Dashboard component
 │   │   └── ...           # Other shared components
 │   │
 │   ├── features/         # Feature-specific logic
@@ -39,40 +39,38 @@ Project Structure
 │   │   └── user/          # User authentication features
 │   │
 │   ├── hooks/            # Custom React hooks
-│   │   └── useFetchData.ts # Hook for data fetching
+│   │   └── useFetchData.js # Hook for data fetching
 │   │
 │   ├── layouts/          # Layout components
-│   │   ├── AuthLayout.tsx # Layout for authentication pages
-│   │   ├── MainLayout.tsx # Main layout for authenticated pages
+│   │   ├── AuthLayout.js  # Layout for authentication pages
+│   │   ├── MainLayout.js  # Main layout for authenticated pages
 │   │   └── ...           # Additional layouts
 │   │
 │   ├── pages/            # Main application pages
-│   │   ├── Login.tsx      # Login page
-│   │   ├── Register.tsx   # Registration page
-│   │   ├── Dashboard.tsx   # Main dashboard
-│   │   ├── Contacts.tsx    # Contacts management page
-│   │   └── Customers.tsx   # Customers management page
+│   │   ├── Login.js       # Login page
+│   │   ├── Register.js    # Registration page
+│   │   ├── Dashboard.js    # Main dashboard
+│   │   ├── Contacts.js     # Contacts management page
+│   │   └── Customers.js    # Customers management page
 │   │
-│   ├── router/           # Application routing
-│   │   └── index.tsx      # Router configuration
+│   ├── config/           # Configuration files
+│   │   ├── store.js       # Redux store setup
+│   │   └── router.js      # Router configuration
 │   │
 │   ├── services/         # Business logic and services
-│   │   └── authService.ts  # Authentication service
-│   │
-│   ├── store/            # Redux store configuration
-│   │   ├── index.ts       # Store setup
-│   │   └── slices/        # Redux slices
+│   │   └── authService.js  # Authentication service
 │   │
 │   ├── styles/           # Global and component-specific styles
 │   │   └── globals.css    # Global styles
 │   │
 │   ├── utils/            # Utility functions
-│   │   ├── localStorageUtil.ts # Local storage utilities
-│   │   ├── authUtils.ts   # Authentication utilities
+│   │   ├── localStorageUtil.js # Local storage utilities
+│   │   ├── authUtils.js   # Authentication utilities
 │   │   └── ...           # Other utility functions
 │   │
-│   └── App.tsx           # Main application component
+│   └── App.js            # Main application component
 │
 └── package.json           # Project dependencies and scripts
+
 
 ## OTHER FEATURES WILL BE ADDED SOON 
